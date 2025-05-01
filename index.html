@@ -1,16 +1,15 @@
 <head>
-    <link rel="manifest" href="/manifest.json" />
-<script src="/fullscreen.js" defer></script>
     <link rel="stylesheet" href="assets/index.css">
-    <link rel="icon" type="image/x-icon" href="https://play-lh.googleusercontent.com/_TNbiYKasPy_isTSEg2_UEzVaev4F8fO2lLunsHJ8_Ux2g3OzkSZyzpqvJG1woSj-WD4=w240-h480-rw">
+    <link rel="icon" type="image/x-icon"
+        href="https://play-lh.googleusercontent.com/_TNbiYKasPy_isTSEg2_UEzVaev4F8fO2lLunsHJ8_Ux2g3OzkSZyzpqvJG1woSj-WD4=w240-h480-rw">
     <title>mObywatel</title>
     <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
 </head>
-<body>
-    <img src="https://play-lh.googleusercontent.com/_TNbiYKasPy_isTSEg2_UEzVaev4F8fO2lLunsHJ8_Ux2g3OzkSZyzpqvJG1woSj-WD4" class="logo">
-    <p class="logo_text">mObywatel 2.0</p>
 
-    <p class="warning">Pamiętaj strona ta służy do generowania kolejcjonerskich dowodów, używanie wygenerowanego dowodu jest nielegalne.</p>
+<body>
+    <img src="https://play-lh.googleusercontent.com/_TNbiYKasPy_isTSEg2_UEzVaev4F8fO2lLunsHJ8_Ux2g3OzkSZyzpqvJG1woSj-WD4"
+        class="logo">
+    <p class="logo_text">yObywatel 2.0</p>
 
     <div class="guide_holder">
         <div class="top_holder">
@@ -35,20 +34,20 @@
 
     <div class="upload">
         <p class="error">To pole jest wymagane</p>
-        <img class="upload_uploaded" id="uploadedPreview" style="display: none;">
+        <img class="upload_uploaded">
         <div class="upload_uploading"></div>
         <div class="upload_grid">
-            <input type="text" id="imgurLink" class="input" placeholder="Wklej link do zdjęcia z Imgur">
-            <p class="upload_text">Podaj link do zdjęcia</p>
+            <img class="upload_image" src="https://i.imgur.com/vwIQErh.png">
+            <p class="upload_text">Dodaj zdjęcie</p>
         </div>
-    </div>    
+    </div>
 
     <div class="input_holder">
         <input type="text" id="name" class="input" placeholder="">
         <span class="placeholder">Imię (imiona)</span>
         <p class="error">To pole jest wymagane</p>
     </div>
- 
+
     <div class="input_holder">
         <input type="text" id="surname" class="input" placeholder="">
         <span class="placeholder">Nazwisko</span>
@@ -131,22 +130,5 @@
 
     <a class="go">wejdź</a>
 
-<!-- Twój kod do obsługi linku z imgura -->
-<script>
-    document.getElementById("imgurLink").addEventListener("input", function () {
-        const link = this.value.trim();
-        const img = document.getElementById("uploadedPreview");
-    
-        if (link.startsWith("http") && (link.endsWith(".jpg") || link.endsWith(".png") || link.endsWith(".jpeg"))) {
-            img.src = link;
-            img.style.display = "block";
-        } else {
-            img.style.display = "none";
-        }
-    });
-    </script>
-    
-    <!-- Główne JS -->
     <script src="assets/index.js"></script>
-    </body>
-    
+</body>
